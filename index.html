@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Sunnyside Agency logo">
+          </a>
+        </div>
+        <span class="ham" id="ham"><img src="images/icon-hamburger.svg" alt=""></span>
+          <ul  class="nav-link mobile-view fadeout" id="remove">
+           <li><a href="#" class="pro">About</a></li>
+           <li><a href="#" class="pro">Services</a></li>
+           <li><a href="#" class="pro">Projects</a></li>
+           <li><a href="#" class="contact">Contact</a></li>
+          </ul>
+      </div>
+     <div class="create">
+      <h1> We are creatives</h1>
+      <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+     </div>
+    </div>
+  </header>
+  <section>
+    <div class="grid">
+      <div class="first">
+        <div class="trans">
+          <h2>  Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+        </div>
+        <h3>Learn more</h3>
+      </div>
+      <div class="sec">
+        <div class="egg"></div>
+      </div>
+      <div class="third">
+        <div class="cup"></div>
+      </div>
+      <div class="fourth">
+        <div class="stand">
+          <h2> Stand out to the right audience</h2>
+          <p> Using a collaborative formula of designers, researchers, photographers, videographers
+            , and copywriters, we’ll build and extend your brand in digital places.
+           </p>
+           <h3>Learn more</h3>
+        </div>
+      </div>
+      <div class="fifth">
+        <div class="apple">
+         <div class="des">
+          <h2> Graphic design</h2>
+          <p class="ink">Great design makes you memorable. We deliver artwork
+             that underscores your brand message and captures potential clients’ attention.
+          </p>
+         </div>
+        </div>
+      </div>
+      <div class="six">
+        <div class="photo">
+          <div class="text"><h2>Photography</h2>
+          <p class="ink">Increase your credibility by getting the most stunning,
+             high-quality photos that improve your business image.
+          </p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="client">
+    <div class="container">
+    <h1> Client testimonials</h1>
+      <div class="flex">
+        <div class="card">
+          <img src="images/image-emily.jpg" alt="" class="emily">
+          <div class="card-body">
+            <p>We put our trust in Sunnyside and they delivered,
+               making sure our needs were met and deadlines were always hit.
+             </p>
+             <h4> Emily R.</h4>
+             <h5> Marketing Director</h5>
+          </div>
+        </div>
+        <div class="card">
+         <img src="images/image-thomas.jpg" alt="" class="thomas">
+         <div class="card-body">
+           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
+             success made it a satisfying and enjoyable experience.
+            </p>
+            <h4> Thomas S.</h4>
+            <h5> Chief Operating Officer</h5>
+         </div>
+       </div>
+       <div class="card">
+         <img src="images/image-jennie.jpg" alt="" class="jennie">
+         <div class="card-body">
+           <p>Incredible end result! Our sales increased over 400% when 
+             we worked with Sunnyside. Highly recommended!
+            </p>
+            <h4>  Jennie F. </h4>
+            <h5> Business Owner</h5>
+         </div>
+       </div>
+      </div>
+    </div>
+  </main>
+  <section>
+    <div class="cube">
+      <div class="bottle"></div>
+      <div class="cream"></div>
+      <div class="ice"></div>
+      <div class="bat"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <img src="images/logo.svg" alt="">
+      <ul class="tab nav-link">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <ul class="you nav-link">
+        <li><a href="#"><img src="images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="images/icon-instagram.svg" alt=""></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg" alt=""></a></li>
+        <li ><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+<script>
+  let btn= document.querySelector("#ham");
+  btn.onclick= ()=>{
+    let remove= document.querySelector("#remove")
+    remove.classList.toggle("nav-link")
+    if(remove.classList.contains("nav-link") ){
+      remove.classList.add("fadeout")
+     
+    }else{
+      remove.classList.add("fade")
+      remove.classList.remove("fadeout")
+    }
+  }
+</script>
+</body>
+</html>
