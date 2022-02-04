@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header >
     <div class="container">
       <div class="navbar">
         <div class="navbar-brand">
@@ -28,10 +28,10 @@
         </div>
         <span class="ham" id="ham"><img src="images/icon-hamburger.svg" alt=""></span>
           <ul  class="nav-link mobile-view fadeout" id="remove">
-           <li><a href="#" class="pro">About</a></li>
-           <li><a href="#" class="pro">Services</a></li>
-           <li><a href="#" class="pro">Projects</a></li>
-           <li><a href="#" class="contact">Contact</a></li>
+           <li><a href="#about" class="pro">About</a></li>
+           <li><a href="#services" class="pro">Services</a></li>
+           <li><a href="#project" class="pro">Projects</a></li>
+           <li><a href="#contact" class="contact">Contact</a></li>
           </ul>
       </div>
      <div class="create">
@@ -40,7 +40,7 @@
      </div>
     </div>
   </header>
-  <section>
+  <section id="about">
     <div class="grid">
       <div class="first">
         <div class="trans">
@@ -86,7 +86,7 @@
       </div>
     </div>
   </section>
-  <main class="client">
+  <main class="client" id="services">
     <div class="container">
     <h1> Client testimonials</h1>
       <div class="flex">
@@ -123,7 +123,7 @@
       </div>
     </div>
   </main>
-  <section>
+  <section id="project">
     <div class="cube">
       <div class="bottle"></div>
       <div class="cream"></div>
@@ -131,7 +131,7 @@
       <div class="bat"></div>
     </div>
   </section>
-  <footer>
+  <footer id="contact">
     <div class="container">
       <img src="images/logo.svg" alt="">
       <ul class="tab nav-link">
@@ -161,5 +161,6 @@
     }
   }
 </script>
+<script src="navbar-fixed.js"></script>
 </body>
 </html>
